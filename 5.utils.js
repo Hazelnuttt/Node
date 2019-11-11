@@ -1,4 +1,3 @@
-;```
 const util = require('util')
 const fs = require('fs')
 
@@ -23,4 +22,3 @@ let read = promisify(fs.readFile)
 read('./name.txt', 'utf8').then(data => {
   console.log(data)
 })
-```
