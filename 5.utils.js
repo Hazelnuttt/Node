@@ -1,10 +1,10 @@
 const util = require('util')
 const fs = require('fs')
+import javascript from 'highlight.js/lib/languages/javascript'
 import hljs from 'highlight.js/lib/highlight'
 import 'highlight.js/styles/github.css'
-hljs.registerLanguage('javascript', function hello() {
-  console.log('xxx')
-})
+hljs.registerLanguage('javascript', javascript)
+
 //inherits 继承
 //isArray isBoolean 判断类型
 
