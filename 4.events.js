@@ -1,5 +1,7 @@
+//每个实例上都有个__proto__ 指向原型 prototype
+
 function EventEmitter() {
-  this._events = Object.create(null)
+  this._events = Object.create(null) //空对象
 }
 //{"失恋":[]}
 EventEmitter.prototype.on = function(eventName, callback) {

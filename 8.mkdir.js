@@ -1,16 +1,15 @@
 let fs = require('fs')
 
 //同步创建目录
-// function mkdirSync(p) {
-//   let arr = p.split('/')
-//   for (let i = 0; i < arr.length; i++) {
-//     let current = arr.slice(0, i + 1).join('/')
-//     if (!fs.existsSync(current)) {
-//       fs.mkdirSync(current)
-//     }
-//   }
-// }
-
+function mkdirSync(p) {
+  let arr = p.split('/')
+  for (let i = 0; i < arr.length; i++) {
+    let current = arr.slice(0, i + 1).join('/')
+    if (!fs.existsSync(current)) {
+      fs.mkdirSync(current)
+    }
+  }
+}
 // mkdirSync('a/b/c/d')
 
 //异步创建目录
@@ -33,4 +32,5 @@ function mkdir(p) {
   }
   next()
 }
-mkdir('e/f/g/h')
+
+// mkdir('e/f/g/h')
