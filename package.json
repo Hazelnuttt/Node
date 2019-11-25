@@ -16,6 +16,7 @@
   "devDependencies": {
     "chalk": "^3.0.0",
     "mime": "^2.4.4",
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^3.2.0",
+    "uuid": "^3.3.3"
   }
 }
